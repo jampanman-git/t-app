@@ -1,0 +1,16 @@
+* {
+  margin:0; padding:0;
+}
+
+.first-content{
+  width: 100vw;
+  height: 100vh;
+  background-image:url("mascle_back.jpg"); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catch-cory{
+  
+}
