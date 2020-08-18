@@ -2,11 +2,18 @@
   <div class="heading">
     <%= link_to image_tag("original_logo.png", class:"logo-icon"), "/" %>
   </div>
+  
   <div class="navbar">
-
     <ul class="nav-lists">
+      <% if user_signed_in? %>
+        <li><%= link_to 'ライン登録', "#", class: "line" %></li>
+        <li><%= link_to 'フレンド', "#", class: "friends" %></li>
+        <li><%= link_to 'マイページ', "#", class: "my-page" %></li>
+        <li><%= link_to 'トレーニング', "#", class: "training" %></li>
+      <%else%>
         <li><%= link_to 'ログイン', "#", class: "login" %></li>
         <li><%= link_to '新規登録', "#", class: "sign-up" %></li>
+      <%end%>
     </ul>
   </div>
 </header>
