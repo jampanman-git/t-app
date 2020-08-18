@@ -29,9 +29,11 @@ header {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 
 li{
   list-style: none;
+  padding-left: 5%;
+  font-size: 18px;
 }
