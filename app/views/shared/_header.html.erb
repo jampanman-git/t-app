@@ -12,8 +12,8 @@
         <li><%= link_to 'トレーニング', "#", class: "training" %></li>
         <li><%= link_to 'ログアウト', "#", class: "sign_out" %></li>
       <%else%>
-        <li><%= link_to 'ログイン', "#", class: "sign_in" %></li>
-        <li><%= link_to '新規登録', "#", class: "sign_up" %></li>
+        <li><%= link_to 'ログイン', new_user_session_path, class: "sign-in" %></li>
+        <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
       <%end%>
     </ul>
   </div>
