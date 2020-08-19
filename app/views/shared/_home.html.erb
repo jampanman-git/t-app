@@ -6,13 +6,17 @@
       <% if @items.present? %>
         <%= pie_chart @data %>
       <% else %>
-        <h1 class="data-nothing">“さあ、トレーニングをしましょう！”</h1>
-        <div class="training-btn"><%= link_to 'ログイン', "#", class: "sign-in" %></div>
+        <h1 class="data-nothing">さあ、トレーニングをしましょう！</h1>
+        <div class="training-btn"><%= link_to 'トレーニング', "#", class: "sign-in" %></div>
       <% end %>
     </div>
   </div>
 
   <div class="friend`s-data">
+    <div class="friend`s-data-nothing">
+      <h1 class="data-nothing">友達を登録しましょう！</h1>
+      <div class="training-btn"><%= link_to 'フレンド登録', "#", class: "sign-in" %></div>
+    </div>
   </div>
 
 </div>
