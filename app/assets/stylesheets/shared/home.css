@@ -1,0 +1,20 @@
+.main{
+  width: 100vw;
+  background-color: white;
+}
+
+.data-nothing{
+  padding: 0 10vh;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.friends-data-nothing{
+  padding: 0 10vh;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
