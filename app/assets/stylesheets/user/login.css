@@ -1,0 +1,26 @@
+.form-Wrap{
+  width: 50%;
+  background-color: white;
+  padding-bottom: 250px;
+}
+
+.login-btn {
+  width: 50%;
+  margin: 50px 0 0 125px;
+  
+}
+
+.login-red-btn {
+  width: 100%;
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-flash-message {
+  text-align: center;
+  color: red;
+}
