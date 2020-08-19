@@ -3,7 +3,12 @@
   <div class="my-data">
     <h2 class='title'>My trainind data</h2>
     <div class="detail-data">
-      
+      <% if @items.present? %>
+        <%= pie_chart @data %>
+      <% else %>
+        <h1 class="data-nothing">“さあ、トレーニングをしましょう！”</h1>
+        <div class="training-btn"><%= link_to 'ログイン', "#", class: "sign-in" %></div>
+      <% end %>
     </div>
   </div>
 

@@ -2,10 +2,10 @@
 
   <%= render "shared/header"%>
 
-  <%# <% if user_signed_in? %> 
-    <%# <%= render "shared/home"%> 
-  <%# <%else%> 
+  <% if user_signed_in? %> 
+    <%= render "shared/home"%> 
+  <%else%> 
     <%= render "shared/top"%>
-  <%# <%end%> 
+  <%end%> 
 
 </div>
