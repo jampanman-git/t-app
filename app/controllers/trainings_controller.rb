@@ -7,4 +7,16 @@ class TrainingsController < ApplicationController
       end
     end
   end 
+
+  def new
+    @training = Training.new
+  end
+
+  def create
+    @training = Training.new(item_params)
+    # if @training.save
+    #   redirect_to root_path
+    # end
+  end
+
 end
