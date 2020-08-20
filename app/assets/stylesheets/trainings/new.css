@@ -1,0 +1,22 @@
+.t-menu{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indispensable{
+  color: red;
+}
+
+.finish-btn{
+  width: 80%;
+  background: blue;
+  border: 1px solid blue;
+  color: #fff;
+  line-height: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  margin:30px 16px 0 9px;
+}

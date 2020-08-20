@@ -7,4 +7,24 @@ class TrainingsController < ApplicationController
       end
     end
   end 
+
+  def new
+    @training = Training.new
+  end
+
+  def create
+    @training = Training.new(training_params)
+    if @training.save
+      render :create
+    else
+      render :new
+    end
+  end
+
+  private
+
+  def training_params
+    params.require(:training).permit(:arm, :spine, :abs, :leg).merge(user_id: current_user.id)
+  end
+
 end
