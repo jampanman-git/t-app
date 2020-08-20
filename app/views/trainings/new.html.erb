@@ -1,0 +1,20 @@
+<div class="training-page-wrapper">
+
+  <%= render "shared/header"%>
+
+  <div class="trainig-menu">
+    <h1 class="training-title">Trainig</h1>
+
+    <%= form_with model: @item, url:items_path, local: true do |f| %>
+
+      <div class="traing-part-blobk">
+        <div class="taining-content">
+            <h4 class="taining-part">腕筋</h4>
+            <span class="indispensable">必須</span>
+        </div>
+        <div class="counter"><%= f.text_area :name, class:"detail-counter", placeholder:"0"%>回</div>
+      </div>
+    <% end %>
+  </div>
+
+</div>
