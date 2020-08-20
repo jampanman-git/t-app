@@ -13,10 +13,16 @@ class TrainingsController < ApplicationController
   end
 
   def create
-    @training = Training.new(item_params)
+    @training = Training.new(training_params)
     # if @training.save
     #   redirect_to root_path
     # end
+  end
+
+  private
+
+  def training_params
+    params.require(:training).permit(:arm, :spine, :abs, :legs).merge(user_id: current_user.id)
   end
 
 end
