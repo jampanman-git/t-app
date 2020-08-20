@@ -14,9 +14,9 @@ class TrainingsController < ApplicationController
 
   def create
     @training = Training.new(training_params)
-    # if @training.save
-    #   redirect_to root_path
-    # end
+    if @training.save
+      redirect_to root_path
+    end
   end
 
   private
