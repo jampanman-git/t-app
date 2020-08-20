@@ -13,11 +13,12 @@ class TrainingsController < ApplicationController
   end
 
   def create
-    @training.create(training_params)
-    #   redirect_to root_path
-    # else
-    #   render:new
-    # end
+    @training = Training.new(training_params)
+    if @training.save
+      render :create
+    else
+      render :new
+    end
   end
 
   private
