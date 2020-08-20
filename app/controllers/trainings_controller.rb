@@ -16,6 +16,8 @@ class TrainingsController < ApplicationController
     @training = Training.new(training_params)
     if @training.save
       redirect_to root_path
+    else
+      render:new
     end
   end
 
