@@ -2,10 +2,12 @@ class TrainingsController < ApplicationController
   def index
     if user_signed_in?
     range=Range.new(Time.zone.today, Time.zone.today.tomorrow)
-    @arm = Training.where(created_at: range ).sum(:arm)
-    @spine = Training.where(created_at: range).sum(:spine)
-    @abs = Training.where(created_at: range).sum(:abs)
-    @leg = Training.where(created_at: range).sum(:leg)
+    @trainings = Training.where(created_at: range)
+    binding.pry
+    @arm = Training.where(created_at: range ,user_id: current_user.id).sum(:arm)
+    @spine = Training.where(created_at: range,user_id: current_user.id).sum(:spine)
+    @abs = Training.where(created_at: range,user_id: current_user.id).sum(:abs)
+    @leg = Training.where(created_at: range,user_id: current_user.id).sum(:leg)
     @data = {'腕筋' => @arm , '背筋' => @spine, '腹筋' => @abs,  '脚筋' =>@leg }
     end
     # if user_signed_in?
