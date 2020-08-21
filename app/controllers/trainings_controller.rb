@@ -2,8 +2,7 @@ class TrainingsController < ApplicationController
   def index
     if user_signed_in?
     range=Range.new(Time.zone.today, Time.zone.today.tomorrow)
-    @trainings = Training.where(created_at: range)
-    binding.pry
+    @trainings = Training.where(created_at: range, user_id: current_user.id)
     @arm = Training.where(created_at: range ,user_id: current_user.id).sum(:arm)
     @spine = Training.where(created_at: range,user_id: current_user.id).sum(:spine)
     @abs = Training.where(created_at: range,user_id: current_user.id).sum(:abs)
