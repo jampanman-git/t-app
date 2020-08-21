@@ -3,16 +3,8 @@ class TrainingsController < ApplicationController
     if user_signed_in?
     range=Range.new(Time.zone.today, Time.zone.today.tomorrow)
     @trainings = Training.where(created_at: range, user_id: current_user.id)
-    @arm = Training.where(created_at: range ,user_id: current_user.id).sum(:arm)
-    @spine = Training.where(created_at: range,user_id: current_user.id).sum(:spine)
-    @abs = Training.where(created_at: range,user_id: current_user.id).sum(:abs)
-    @leg = Training.where(created_at: range,user_id: current_user.id).sum(:leg)
-    @data = {'腕筋' => @arm , '背筋' => @spine, '腹筋' => @abs,  '脚筋' =>@leg }
+    @data = {'腕筋' => @trainings.sum(:arm) , '背筋' => @trainings.sum(:spine), '腹筋' => @trainings.sum(:abs),  '脚筋' => @trainings.sum(:leg)}
     end
-    # if user_signed_in?
-    #   @arm = Training.find(created_at: today).sum(:arm)
-    #   @data = {'腕筋' => @training.arm , '背筋' => @training.spine, '腹筋' => @training.abs,  '脚筋' =>@training.leg }
-    # end
   end 
 
   def new
