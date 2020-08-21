@@ -1,8 +1,11 @@
 class TrainingsController < ApplicationController
   def index
-    range=Range.new(Time.zone.today, Time.zone.today.tomorrow)
+    range=Range.new(Time.zone.today, Time.zone.tomorrow)
+    # binding.pry
     @trainings = Training.where(created_at: range, user_id: current_user.id)
     @data = {'腕筋' => @trainings.sum(:arm) , '背筋' => @trainings.sum(:spine), '腹筋' => @trainings.sum(:abs),  '脚筋' => @trainings.sum(:leg)}
+
+    # range2=Range.new(,Time.zone.today.tomorrow)
   end 
 
   def new
