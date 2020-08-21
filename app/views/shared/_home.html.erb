@@ -1,8 +1,10 @@
 <div class='main'>
 
   <div class="all-data">
-    <h2 class='title'>My training data</h2>
+
+  <%# 自分のデータ %>
     <div class="my-data">
+      <h2 class='title'>My training data</h2>
       <% if @trainings.present? %>
         <div class="graphs">
           <div class="detail-data">
@@ -10,16 +12,19 @@
               <h4 class="theme">＜本日のトレーニング＞</h4>
               <%= column_chart @data%>
             </div>
+
             <div class="each-data">
               <h4 class="theme">＜１週間のトレーニングバランス＞</h4>
               <%= pie_chart @data %>
             </div>
+
             <div class="each-data">
               <h4 class="theme">＜１週間分の総回数の推移＞</h4>
               <%= line_chart @data %>
             </div>
           </div>
         </div>
+        
       <% else %>
         <div class="data-nothing">
           <h1 class="lets-train">さあ、トレーニングをしましょう！</h1>
@@ -29,6 +34,7 @@
     </div>
   </div>
 
+  <%# フレンドのデータ %>
   <div class="friends-data">
   <h2 class='title'>My friend's data</h2>
     <div class="friends-data-nothing">
