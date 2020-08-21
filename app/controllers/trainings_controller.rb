@@ -3,6 +3,9 @@ class TrainingsController < ApplicationController
     if user_signed_in?
     range=Range.new(Time.zone.today, Time.zone.today.tomorrow)
     @arm = Training.where(created_at: range).sum(:arm)
+    @spine = Training.where(created_at: range).sum(:spine)
+    @abs = Training.where(created_at: range).sum(:abs)
+    @leg = Training.where(created_at: range).sum(:leg)
     binding.pry
     
     end
