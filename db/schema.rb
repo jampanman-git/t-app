@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_19_151256) do
+ActiveRecord::Schema.define(version: 2020_08_23_050345) do
+
+  create_table "follows", id: :integer, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "followable_type", null: false
+    t.integer "followable_id", null: false
+    t.string "follower_type", null: false
+    t.integer "follower_id", null: false
+    t.boolean "blocked", default: false, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["followable_id", "followable_type"], name: "fk_followables"
+    t.index ["follower_id", "follower_type"], name: "fk_follows"
+  end
 
   create_table "trainings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "arm", null: false
