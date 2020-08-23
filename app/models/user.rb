@@ -13,4 +13,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   acts_as_follower
+  acts_as_followable
 end
