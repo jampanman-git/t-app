@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
 
+  def index
+    @users = User.all.order(nickname: "DESC")
+  end
+
   def follow
     @user = User.find(params[:user_id])
     current_user.follow(@user)
