@@ -2,23 +2,19 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all.order(nickname: "DESC")
-    # @user = User.find(params[:id])
   end
-
-  # def show
-  # end
 
   def follow
     @user = User.find(params[:user_id])
     current_user.follow(@user)
-    redirect_to user_path(@user)
+    redirect_to users_path
   end
 #フォローする
 
   def unfollow
       @user = User.find(params[:user_id])
       current_user.stop_following(@user)
-      redirect_to user_path(@user)
+      redirect_to users_path
   end
   #フォローを外す
 
