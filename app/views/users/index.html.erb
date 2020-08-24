@@ -16,8 +16,14 @@
       <% @users.each do |user|%>
         <div class='each-user'>
           <div class='user-name'><%= user.nickname %></div>
-          <%# <div class='follow-button-area'>
-          </div> %>
+
+          <div id="follow_form">
+            <% if current_user.following? user %>
+              <%= link_to "UnFollow", {controller: :users,action: :unfollow,user_id: user.id}, method: :put %>
+            <% else %>
+              <%= link_to "Follow", {controller: :users,action: :follow,user_id: user.id}, method: :put %>
+            <% end %>
+          </div>
         </div>
       <%end%>
     </div>
