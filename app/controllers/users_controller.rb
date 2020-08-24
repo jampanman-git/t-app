@@ -4,6 +4,9 @@ class UsersController < ApplicationController
     @users = User.all.order(nickname: "DESC")
   end
 
+  def show
+  end
+
   def follow
     @user = User.find(params[:user_id])
     current_user.follow(@user)
@@ -29,3 +32,4 @@ class UsersController < ApplicationController
   end
   #フォロワーの一覧ページ
 end
+
