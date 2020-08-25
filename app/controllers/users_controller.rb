@@ -13,11 +13,6 @@ class UsersController < ApplicationController
   def update
   end
 
-  private
-  def tweet_params
-    params.require(:user).permit(:nickname).merge(user_id: current_user.id)
-  end
-
   def search
     @users = User.search(params[:keyword])
   end
