@@ -4,6 +4,12 @@ class UsersController < ApplicationController
     @users = User.all.order(nickname: "DESC")
   end
 
+  def show
+  end
+
+  def update
+  end
+
   def search
     @users = User.search(params[:keyword])
   end
