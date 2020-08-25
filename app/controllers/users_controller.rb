@@ -4,6 +4,10 @@ class UsersController < ApplicationController
     @users = User.all.order(nickname: "DESC")
   end
 
+  def search
+    @users = User.search(params[:keyword])
+  end
+
   def follow
     @user = User.find(params[:user_id])
     current_user.follow(@user)
