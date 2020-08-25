@@ -1,0 +1,18 @@
+<div class='mypage-main'>
+
+  <%= render "shared/header"%>
+
+  <div class='mypage-contets'>
+    <div class='my-image'>
+      <%= image_tag message.image, class: 'my-box' %>
+    </div>
+    
+    <div class='my-nickname'>
+      <div class='my-box'><%= @current_user.nickname%></div>
+    </div>
+    
+  </div>
+
+  </div>
+
+</div>
