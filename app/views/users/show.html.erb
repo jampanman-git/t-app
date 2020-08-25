@@ -6,8 +6,8 @@
     <div class='my-image'>
       <%if current_user.image.present? %>
         <%= image_tag current_user.image, class: 'my-box' %>
-      <%# <%else%> %>
-
+      <%else %>
+        <img class='nothing-image' src="images/sample1.png" alt="サンプル画像です">
       <%end %>
     </div>
     
