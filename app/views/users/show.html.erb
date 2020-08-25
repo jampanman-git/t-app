@@ -4,15 +4,16 @@
 
   <div class='mypage-contets'>
     <div class='my-image'>
-      <%= image_tag message.image, class: 'my-box' %>
+      <%# <%if current_user.image.present?%> %>
+        <%# <%=  %> %>
+      <%# <%else%> %>
+        <%# <%= image_tag current_user.image, class: 'my-box' %> %>
+      <%# <%end%> %>
     </div>
     
     <div class='my-nickname'>
       <div class='my-box'><%= @current_user.nickname%></div>
     </div>
-    
-  </div>
-
   </div>
 
 </div>
