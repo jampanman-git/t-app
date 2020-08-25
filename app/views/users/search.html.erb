@@ -1,5 +1,7 @@
 <div class='result-wrapper'>
 
+  <%= render "shared/header"%>
+
   <div class='result-main'>
     <div class='search-clock'>
       <%= form_with(url: search_users_path, local: true, method: :get, class: "search-form") do |form| %>
