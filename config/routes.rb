@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :users, only: [:index, :show, :edit, :update]
+  resources :users, only: [:index, :show, :edit, :update] do
+    collection do
+      get 'search'
+    end
+  end
   
   resources :trainings, only: [:index, :new, :create]
   root "trainings#index"
