@@ -3,7 +3,7 @@ class User < ApplicationRecord
 
   def self.search(search)
     if search != ""
-      User.where('text LIKE(?)', "%#{search}%")
+      User.where('nickname LIKE(?)', "%#{search}%")
     else
       User.all
     end
