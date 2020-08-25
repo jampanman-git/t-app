@@ -63,3 +63,4 @@ end
 gem 'pry-rails'
 gem 'devise'
 gem "chartkick"
+gem "acts_as_follower", github: "tcocca/acts_as_follower"
