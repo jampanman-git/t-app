@@ -4,6 +4,21 @@ class UsersController < ApplicationController
     @users = User.all.order(nickname: "DESC")
   end
 
+  def show
+  end
+
+  def edit
+  end
+
+  def update
+    current_user.update(user_params)
+  end
+
+  private
+  def user_params
+    params.require(:user).permit(:nickname,:image).merge(user_id: current_user.id)
+  end
+
   def search
     @users = User.search(params[:keyword])
   end
