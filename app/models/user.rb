@@ -1,6 +1,14 @@
 class User < ApplicationRecord
   has_many :trainings
 
+  def self.search(search)
+    if search != ""
+      User.where('text LIKE(?)', "%#{search}%")
+    else
+      User.all
+    end
+  end
+
   with_options presence: true do
     validates :nickname, uniqueness: true, length: { maximum: 6 }
     validates :email, uniqueness: true
