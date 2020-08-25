@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_many :trainings
+  has_one_attached :image
 
   def self.search(search)
     if search != ""
