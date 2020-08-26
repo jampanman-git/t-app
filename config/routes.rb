@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :users, only: [:index, :show, :edit, :update] do
+  resources :users, only: [:index, :show] do
     collection do
       get 'search'
     end
