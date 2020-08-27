@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all.order(nickname: "DESC")
+    @user = current_user
   end
 
   def show

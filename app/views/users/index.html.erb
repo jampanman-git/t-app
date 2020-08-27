@@ -4,8 +4,8 @@
 
   <div class='f.main'>
     <div class='my-f.data'>
-      <h3>フォロー数:<%= current_user.follow_count %></h3>
-      <h3>フォロワー数:<%= current_user.followers_count %></h3>
+      <h3><%= link_to 'フォロー数', {controller: :users,action: :follow_list,user_id: @user.id}, class: "follow-path" %>:<%= current_user.follow_count %></h3>
+      <h3><%= link_to 'フォロワー数', {controller: :users,action: :follow_list,user_id: @user.id}, class: "follower-path" %>:<%= current_user.followers_count %></h3>
     </div>
 
     <div class='search-block'>
