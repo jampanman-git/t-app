@@ -5,8 +5,8 @@ class User < ApplicationRecord
   acts_as_followable
   acts_as_follower
 
-  with_options presence: true do
-    validates :nickname
+  with_options uniqueness: true do
+    validates :nickname,presence: true
     validates :email
   end
 
