@@ -1,3 +1,11 @@
-<% currnet_user.followers.each do |user| %>
+<%= render "shared/header"%>
+
+<% current_user.followers.each do |user| %>
+  <%if user.image.present? %>
+    <%= image_tag user.image, class: 'friends-image' %>
+  <%else %>
+    <img class='nothing-image' src="images/no_image.png" alt="ユーザー画像です">
+  <%end %>
+
   <%= user.nickname %>
 <% end %>
