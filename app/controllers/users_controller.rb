@@ -16,7 +16,7 @@ class UsersController < ApplicationController
     current_user.follow(@user)
     redirect_to users_path
   end
-#フォローする
+  #フォローする
 
   def unfollow
       @user = User.find(params[:user_id])
@@ -27,7 +27,7 @@ class UsersController < ApplicationController
 
 
   def follow_list
-    @user = User.find(params[:user_id])
+    @users = User.find(params[:user_id])
   end
   #フォローしてる人の一覧ページ
 
