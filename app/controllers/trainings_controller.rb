@@ -42,6 +42,9 @@ class TrainingsController < ApplicationController
                 Time.zone.today.ago(4.days).strftime('%Y年%m月%d日') => @total5,Time.zone.today.ago(3.days).strftime('%Y年%m月%d日') => @total4,
                 Time.zone.today.ago(2.days).strftime('%Y年%m月%d日') => @total3,Time.zone.today.ago(1.days).strftime('%Y年%m月%d日') => @total2,
                 Time.zone.today.strftime('%Y年%m月%d日') => @total1 }
+
+      @test = Follow.where(created_at: range,foller_id: current_user.id)
+      binding.pry
     end
   end 
 
