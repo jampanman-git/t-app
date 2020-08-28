@@ -46,8 +46,8 @@ class TrainingsController < ApplicationController
       # @test = Follow.where(created_at: range,foller_id: current_user.id)
       # binding.pry
       @follows = current_user.all_following
-      # @test3 = Training.where(created_at: range, user_id: @follows.id)
-      # binding.pry
+      @test3 = Training.where(created_at: range, user_id: @follows)
+      binding.pry
     end
   end 
 
