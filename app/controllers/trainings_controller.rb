@@ -43,11 +43,34 @@ class TrainingsController < ApplicationController
                 Time.zone.today.ago(2.days).strftime('%Y年%m月%d日') => @total3,Time.zone.today.ago(1.days).strftime('%Y年%m月%d日') => @total2,
                 Time.zone.today.strftime('%Y年%m月%d日') => @total1 }
 
-      # @test = Follow.where(created_at: range,foller_id: current_user.id)
-      # binding.pry
       @follows = current_user.all_following
-      @test3 = Training.where(created_at: range, user_id: @follows)
-      binding.pry
+      # @f_trainings = Training.where(created_at: range2, user_id: @follows)
+      
+      @f_trainings1 = Training.where(created_at: range3, user_id: @follows)
+      f_total1 = @f_trainings1.sum(:arm) + @f_trainings1.sum(:spine) + @f_trainings1.sum(:abs) + @f_trainings1.sum(:leg)
+
+      @f_trainings2 = Training.where(created_at: range4, user_id: @follows)
+      f_total2 = @f_trainings2.sum(:arm) + @f_trainings2.sum(:spine) + @f_trainings2.sum(:abs) + @f_trainings2.sum(:leg)
+
+      @f_trainings3 = Training.where(created_at: range5, user_id: @follows)
+      f_total3 = @f_trainings3.sum(:arm) + @f_trainings3.sum(:spine) + @f_trainings3.sum(:abs) + @f_trainings3.sum(:leg)
+
+      @f_trainings4 = Training.where(created_at: range6, user_id: @follows)
+      f_total4 = @f_trainings4.sum(:arm) + @f_trainings4.sum(:spine) + @f_trainings4.sum(:abs) + @f_trainings4.sum(:leg)
+
+      @f_trainings5 = Training.where(created_at: range7, user_id: @follows)
+      f_total5 = @f_trainings5.sum(:arm) + @f_trainings5.sum(:spine) + @f_trainings5.sum(:abs) + @f_trainings5.sum(:leg)
+
+      @f_trainings6 = Training.where(created_at: range8, user_id: @follows)
+      f_total6 = @f_trainings6.sum(:arm) + @f_trainings6.sum(:spine) + @f_trainings6.sum(:abs) + @f_trainings6.sum(:leg)
+
+      @f_trainings7 = Training.where(created_at: range9, user_id: @follows)
+      f_total7 = @f_trainings7.sum(:arm) + @f_trainings7.sum(:spine) + @f_trainings7.sum(:abs) + @f_trainings7.sum(:leg)
+
+      @f_data = {Time.zone.today.ago(6.days).strftime('%Y年%m月%d日') => @f_total7,Time.zone.today.ago(5.days).strftime('%Y年%m月%d日') => @f_total6,
+                 Time.zone.today.ago(4.days).strftime('%Y年%m月%d日') => @f_total5,Time.zone.today.ago(3.days).strftime('%Y年%m月%d日') => @f_total4,
+                 Time.zone.today.ago(2.days).strftime('%Y年%m月%d日') => @f_total3,Time.zone.today.ago(1.days).strftime('%Y年%m月%d日') => @f_total2,
+                 Time.zone.today.strftime('%Y年%m月%d日') => @f_total1 }
     end
   end 
 
