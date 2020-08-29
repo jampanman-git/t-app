@@ -5,7 +5,7 @@
   <%# 自分のデータ %>
     <div class="my-data">
       <h2 class='title'>My training data</h2>
-      <% if @trainings.present? %>
+      <% if @trainings2.present? %>
         <div class="graphs">
           <div class="detail-data">
             <div class="each-data">
@@ -37,10 +37,24 @@
   <%# フレンドのデータ %>
   <div class="friends-data">
   <h2 class='title'>My friend's data</h2>
-    <div class="friends-data-nothing">
-      <h1 class="data-nothing">友達を登録しましょう！</h1>
-      <div class="training-btn"><%= link_to 'フレンド登録', users_path, class: "friends" %></div>
-    </div>
+    <%if @follows != [] %> 
+      <div class="detail-data">
+        <div class="each-data">
+          <h4 class="theme">＜１週間分の総回数の推移＞</h4>
+          <% @f_datas.each do |data|%>
+            <% friend = @follows[@num]%>
+            <%= friend.nickname %>
+            <% @num += 1 %>
+            <%= line_chart data, curve: false %>
+          <%end%>
+        </div>
+      </div>
+    <%else %>
+      <div class="friends-data-nothing">
+        <h1 class="data-nothing">友達を登録しましょう！</h1>
+        <div class="training-btn"><%= link_to 'フレンド登録', users_path, class: "friends"%></div> 
+      </div> 
+    <%end%>
   </div>
 
 </div>
