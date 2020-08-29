@@ -45,6 +45,7 @@ class TrainingsController < ApplicationController
 
       
       @follows = current_user.all_following
+      # binding.pry
       @num = 0
       @f_datas = []
 
