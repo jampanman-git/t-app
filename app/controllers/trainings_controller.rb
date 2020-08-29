@@ -45,7 +45,7 @@ class TrainingsController < ApplicationController
 
       
       @follows = current_user.all_following
-      num = @follows.length
+      @num = 0
       @f_datas = []
 
       @follows.each do |follow|
@@ -75,8 +75,6 @@ class TrainingsController < ApplicationController
                     Time.zone.today.ago(2.days).strftime('%Y年%m月%d日') => f_total3,Time.zone.today.ago(1.days).strftime('%Y年%m月%d日') => f_total2,
                     Time.zone.today.strftime('%Y年%m月%d日') => f_total1 }
                     #  binding.pry
-
-        # @f_datas << Training.new(f_data)
         # binding.pry
       end
     end
