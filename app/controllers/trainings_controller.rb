@@ -43,9 +43,9 @@ class TrainingsController < ApplicationController
                 Time.zone.today.ago(2.days).strftime('%Y年%m月%d日') => @total3,Time.zone.today.ago(1.days).strftime('%Y年%m月%d日') => @total2,
                 Time.zone.today.strftime('%Y年%m月%d日') => @total1 }
 
-      @follows = current_user.all_following
-      # @f_trainings = Training.where(created_at: range2, user_id: @follows)
       
+      @follows = current_user.all_following
+
       @f_trainings1 = Training.where(created_at: range3, user_id: @follows)
       f_total1 = @f_trainings1.sum(:arm) + @f_trainings1.sum(:spine) + @f_trainings1.sum(:abs) + @f_trainings1.sum(:leg)
 
@@ -67,10 +67,11 @@ class TrainingsController < ApplicationController
       @f_trainings7 = Training.where(created_at: range9, user_id: @follows)
       f_total7 = @f_trainings7.sum(:arm) + @f_trainings7.sum(:spine) + @f_trainings7.sum(:abs) + @f_trainings7.sum(:leg)
 
-      @f_data = {Time.zone.today.ago(6.days).strftime('%Y年%m月%d日') => @f_total7,Time.zone.today.ago(5.days).strftime('%Y年%m月%d日') => @f_total6,
-                 Time.zone.today.ago(4.days).strftime('%Y年%m月%d日') => @f_total5,Time.zone.today.ago(3.days).strftime('%Y年%m月%d日') => @f_total4,
-                 Time.zone.today.ago(2.days).strftime('%Y年%m月%d日') => @f_total3,Time.zone.today.ago(1.days).strftime('%Y年%m月%d日') => @f_total2,
-                 Time.zone.today.strftime('%Y年%m月%d日') => @f_total1 }
+      @f_data = {Time.zone.today.ago(6.days).strftime('%Y年%m月%d日') => f_total7,Time.zone.today.ago(5.days).strftime('%Y年%m月%d日') => f_total6,
+                 Time.zone.today.ago(4.days).strftime('%Y年%m月%d日') => f_total5,Time.zone.today.ago(3.days).strftime('%Y年%m月%d日') => f_total4,
+                 Time.zone.today.ago(2.days).strftime('%Y年%m月%d日') => f_total3,Time.zone.today.ago(1.days).strftime('%Y年%m月%d日') => f_total2,
+                 Time.zone.today.strftime('%Y年%m月%d日') => f_total1 }
+                #  binding.pry
     end
   end 
 
