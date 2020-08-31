@@ -2,37 +2,41 @@
   margin:0; padding:0;
 }
 
-.top-main{
-  width: 100vw;
-  height: 100%;
-  background-image:url("mascle.webp"); 
-  background-repeat: no-repeat;
-  background-size: cover;
+header{
+	position: relative;
+    overflow:hidden;
+    width:100%;
+    height:568px;
 }
 
-.first-content{
-  width: 100%;display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+header img{
+    position:absolute;
+    left:50%;
+    width:1280px;
+    height:568px;
+    margin-left:-640px;
 }
 
-.first-text{
-  left:50%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.slogan{
+	position: absolute;
+  top: 50%;
+	width: 100%;
+	-webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+	color: #fff;
+	line-height: 1.2;
+	text-align: center;
 }
 
-.second-content{
-  width: 70%;
-  height: 100vh;
-  padding: 0 15% 0 15%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.slogan h1{
+	font-size: 40px;
+	font-family: 'Pacifico', cursive;
+	margin-bottom: 20px;
+	font-weight:normal;
 }
+
+.slogan h2{
+	font-size: 20px;
+	font-weight:normal;
+}
+

@@ -1,12 +1,10 @@
 <div class="first-page-wrapper">
 
-  <%= render "shared/header"%>
+  <%= render "shared/navbar"%>
 
   <% if user_signed_in? %> 
     <%= render "shared/home"%> 
   <%else%> 
-    <div class='top-main'>
       <%= render "shared/top"%>
-    </div>
   <%end%> 
 </div>
