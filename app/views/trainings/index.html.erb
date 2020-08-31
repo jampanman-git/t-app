@@ -5,7 +5,8 @@
   <% if user_signed_in? %> 
     <%= render "shared/home"%> 
   <%else%> 
-    <%= render "shared/top"%>
+    <div class='top-main'>
+      <%= render "shared/top"%>
+    </div>
   <%end%> 
-
 </div>

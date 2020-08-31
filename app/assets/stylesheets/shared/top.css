@@ -2,10 +2,35 @@
   margin:0; padding:0;
 }
 
-.first-content{
+.top-main{
   width: 100vw;
+  height: 100%;
+  background-image:url("mascle.webp"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first-content{
+  width: 100%;display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-text{
+  left:50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-content{
+  width: 70%;
   height: 100vh;
-  background-image:url("mascle_back.jpg"); 
+  padding: 0 15% 0 15%;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
