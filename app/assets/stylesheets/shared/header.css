@@ -133,10 +133,11 @@ body{
   height: 100%;
   transform: translateX(200px);
   position: fixed;
+  z-index: 100;
 }
 
 #input:checked ~ .content{
-  transform: translateX(0px);
+  transform: translateX(-30px);
   transition: .3s ease-in-out;
 }
 
@@ -150,20 +151,17 @@ body{
 }
   
 @media screen and (max-width: 829px){
-  .menu-smafo{
-    
-  }
 
   .menu-pc{
     display: none;
   }
-}
 
-.links {
-  list-style: none;
-}
+  .links {
+    list-style: none;
+  }
 
-.links li{
-  text-decoration: none;
-  font-size: 18px;
+  .links li{
+    text-decoration: none;
+    font-size: 18px;
+  }
 }
