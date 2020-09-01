@@ -37,7 +37,12 @@ body{
   justify-content: flex-end;
 }
 
-.panel {
+.menu-pc {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-smafo {
   margin: 0;
   padding: 0;
 }
@@ -111,15 +116,54 @@ body{
   text-decoration: underline;
 }
 
+#input{
+  display: none;
+}
+
+.line{
+  width:20px;
+  height:3px;
+  background-color: black;
+  margin:3px;
+}
+
+.content{
+  /* background-color: navy; */
+  width: 200px;
+  height: 100%;
+  transform: translateX(200px);
+  position: fixed;
+}
+
+#input:checked ~ .content{
+  transform: translateX(0px);
+  transition: .3s ease-in-out;
+}
 
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/
 
-@media only screen and (min-width: 830px){
-
+@media screen and (min-width: 830px){
+  .menu-smafo{
+    display: none;
+  }
 }
   
-  @media only screen and (max-width: 829px){
-  
+@media screen and (max-width: 829px){
+  .menu-smafo{
     
   }
+
+  .menu-pc{
+    display: none;
+  }
+}
+
+.links {
+  list-style: none;
+}
+
+.links li{
+  text-decoration: none;
+  font-size: 18px;
+}
