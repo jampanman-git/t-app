@@ -8,13 +8,13 @@
     <div class='panel'>
       <ul class='nav-list'>
         <% if user_signed_in? %>
-          <li><%= link_to 'マイページ', user_path(current_user), class: "my-page" %></li>
-          <li><%= link_to 'フレンド', users_path, class: "friends" %></li>
-          <li><%= link_to 'トレーニング', new_training_path, class: "training" %></li>
-          <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "log-out" %></li>
+          <li><%= link_to 'MY PAGE', user_path(current_user), class: "my-page" %></li>
+          <li><%= link_to 'FRIENDS', users_path, class: "friends" %></li>
+          <li><%= link_to 'TRAINING', new_training_path, class: "training" %></li>
+          <li><%= link_to 'LOG OUT', destroy_user_session_path, method: :delete, class: "log-out" %></li>
         <%else%>
-          <li><%= link_to 'ログイン', new_user_session_path, class: "sign-in" %></li>
-          <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+          <li><%= link_to 'LOG IN', new_user_session_path, class: "sign-in" %></li>
+          <li><%= link_to 'SIGN UP', new_user_registration_path, class: "sign-up" %></li>
         <%end%>
       </ul>
     </div>

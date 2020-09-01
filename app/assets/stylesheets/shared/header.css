@@ -3,6 +3,14 @@ ul,li {
   margin: 0;
 }
 
+body{
+	font: 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+	font-weight: 300;
+	-webkit-text-size-adjust:100%;
+	overflow-x: hidden;
+	background: #fff;
+}
+
 .navbar-wrap {
   height: 50px;
   background-color: #f0f0f0;
@@ -43,23 +51,40 @@ ul,li {
 .nav-list li{
   text-decoration: none;
   font-size: 18px;
-  /* margin-right: 3vw; */
 }
 
 .sign-in{
   margin-right: 2vw;
+  text-decoration: none;
+  color: #333333;
+}
+
+.sign-up{
+  color: #333333;
+  text-decoration: none;
 }
 
 .my-page{
   margin-right: 2vw;
+  text-decoration: none;
+  color: #333333;
 }
 
 .friends{
   margin-right: 2vw;
+  text-decoration: none;
+  color: #333333;
 }
 
 .training{
   margin-right: 2vw;
+  text-decoration: none;
+  color: #333333;
+}
+
+.log-out{
+  color: #333333;
+  text-decoration: none;
 }
 
 
