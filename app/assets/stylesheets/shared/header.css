@@ -42,7 +42,24 @@ ul,li {
 
 .nav-list li{
   text-decoration: none;
-  margin-right: 3vw;
+  font-size: 18px;
+  /* margin-right: 3vw; */
+}
+
+.sign-in{
+  margin-right: 2vw;
+}
+
+.my-page{
+  margin-right: 2vw;
+}
+
+.friends{
+  margin-right: 2vw;
+}
+
+.training{
+  margin-right: 2vw;
 }
 
 
