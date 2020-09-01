@@ -59,9 +59,17 @@ body{
   color: #333333;
 }
 
+.sign-in:hover, .active{
+  text-decoration: underline;
+}
+
 .sign-up{
   color: #333333;
   text-decoration: none;
+}
+
+.sign-up:hover, .active{
+  text-decoration: underline;
 }
 
 .my-page{
@@ -70,10 +78,18 @@ body{
   color: #333333;
 }
 
+.my-page:hover, .active{
+  text-decoration: underline;
+}
+
 .friends{
   margin-right: 2vw;
   text-decoration: none;
   color: #333333;
+}
+
+.friends:hover, .active{
+  text-decoration: underline;
 }
 
 .training{
@@ -82,9 +98,17 @@ body{
   color: #333333;
 }
 
+.training:hover, .active{
+  text-decoration: underline;
+}
+
 .log-out{
   color: #333333;
   text-decoration: none;
+}
+
+.log-out:hover, .active{
+  text-decoration: underline;
 }
 
 
