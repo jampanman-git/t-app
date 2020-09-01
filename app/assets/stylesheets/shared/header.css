@@ -138,7 +138,7 @@ body{
 }
 
 #input:checked ~ .content{
-  transform: translateX(-35px);
+  transform: translateX(-70px);
   transition: .3s ease-in-out;
 }
 
