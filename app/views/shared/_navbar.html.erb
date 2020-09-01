@@ -5,11 +5,11 @@
   
   <div class="navbar">
     <p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
-    <div class="panel">
-      <ul>
+    <div class='panel'>
+      <ul class='nav-list'>
         <% if user_signed_in? %>
-          <li><%= link_to 'フレンド', users_path, class: "friends" %></li>
           <li><%= link_to 'マイページ', user_path(current_user), class: "my-page" %></li>
+          <li><%= link_to 'フレンド', users_path, class: "friends" %></li>
           <li><%= link_to 'トレーニング', new_training_path, class: "training" %></li>
           <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "log-out" %></li>
         <%else%>
