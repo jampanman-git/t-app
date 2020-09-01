@@ -4,11 +4,11 @@ ul,li {
 }
 
 body{
-	font: 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
-	font-weight: 300;
-	-webkit-text-size-adjust:100%;
-	overflow-x: hidden;
-	background: #fff;
+  font: 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+  font-weight: 300;
+  -webkit-text-size-adjust:100%;
+  overflow-x: hidden;
+  background: #fff;
 }
 
 .navbar-wrap {
@@ -116,45 +116,45 @@ body{
 ------------------------------------------------------------*/
 
 @media only screen and (min-width: 800px){
-	
+  
   a#menu{
-		display:none;
-	}	
+    display:none;
+  }	
 
-	.panel{
-		display:block !important;
-	}
+  .panel{
+    display:block !important;
+  }
 
-	#mainnav{
-		position:fixed;
-		top: 0;
-		width:100%;
-		z-index:500;
-	}
+  #mainnav{
+    position:fixed;
+    top: 0;
+    width:100%;
+    z-index:500;
+  }
 
-	#mainnav ul{
-		text-align: right;
-		padding-right: 30px;
-	}
+  #mainnav ul{
+    text-align: right;
+    padding-right: 30px;
+  }
 
-	#mainnav li{
-		display: inline-block;
-		padding: 45px 10px 20px;
-		font-size: 14px;
-		font-weight: 300;
-	}
-	
+  #mainnav li{
+    display: inline-block;
+    padding: 45px 10px 20px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
   #mainnav a{
-		color: #000;
-	}
-	
-	#mainnav.changeNav{
-		background: rgba(255,255,255,.9);
-		border-bottom: 1px solid #d1d1d1;
-	}
-	
-	#mainnav.changeNav li{
-		padding: 20px 10px;
+    color: #000;
+  }
+  
+  #mainnav.changeNav{
+    background: rgba(255,255,255,.9);
+    border-bottom: 1px solid #d1d1d1;
+  }
+  
+  #mainnav.changeNav li{
+    padding: 20px 10px;
   }
 
 }
