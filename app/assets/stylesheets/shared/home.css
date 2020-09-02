@@ -70,10 +70,6 @@
   transition: .4s;
 }
 
-.btn-secondary:hover:before,.btn-secondary:hover:after{
-  border-left-width: 25px;
-}
-
 .btn-secondary:active {
   background: #2c3148;
 }
