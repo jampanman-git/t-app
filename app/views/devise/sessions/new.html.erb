@@ -4,7 +4,7 @@
 <div class="box">
   <div class="box-inner">
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-      <h1 class=''>LOG IN</h1>
+      <h1 class='login-title'>LOG IN</h1>
       <div class="box-email">
         <%= f.label :email, "Email" %><br />
         <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
