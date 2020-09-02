@@ -56,6 +56,28 @@
   background-position: center center;
 }
 
+.btn-secondary {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 30px;
+  font-size: 19px;
+  height: 40px;
+  line-height: 40px!;
+  background: #51587b;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  transition: .4s;
+}
+
+.btn-secondary:hover:before,.btn-secondary:hover:after{
+  border-left-width: 25px;
+}
+
+.btn-secondary:active {
+  background: #2c3148;
+}
+
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/
 
