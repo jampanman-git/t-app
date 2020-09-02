@@ -35,19 +35,29 @@
 }
 
 .data-nothing{
+  margin: 50px 15% 0 15%;
   padding: 0 10vh;
   height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: url("abs.jpg");
+  background-color:rgba(255, 255, 255, 0.8);
+  background-blend-mode:lighten;
+  background-position: center center;
 }
 
 .friends-data-nothing{
+  margin: 50px 15% 0 15%;
   padding: 0 10vh;
   height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: url("leg.jpg");
+  background-color:rgba(255, 255, 255, 0.8);
+  background-blend-mode:lighten;
+  background-position: center center;
 }
