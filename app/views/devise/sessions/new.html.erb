@@ -1,30 +1,36 @@
-<%= form_with model: @user, url: user_session_path, class: 'registration-main', local: true do |f| %>
-<div class='form-Wrap'>
-  <div class='form-header'>
-    <h1 class='form-header-text'>
-      会員情報入力
-    </h1>
-  </div>
-  <div class='login-flash-message'>
-    <%= flash[:notice] %>
-    <%= flash[:alert] %>
-  </div>
-  <div class="form-group">
-    <div class='form-text-wrap'>
-      <label class="form-text">メールアドレス</label>
-      <span class="indispensable">必須</span>
+
+
+
+<div class="box">
+  <div class="box-inner">
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <h1 class=''>LOG IN</h1>
+      <div class="box-email">
+        <%= f.label :email, "Email" %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      </div>
+      <div class="box-password">
+        <div class="column-left">
+          <%= f.label :password, "Password" %>
+        </div>
+        <%= f.password_field :password, autocomplete: "current-password" %>
+      </div>
+      <div class="box-login">
+        <%= f.submit "Log in" %>
+        <div class="legal-text">
+          続行することで、Haijime-mascleの
+          <%= link_to "利用規約", "#" %>
+          および
+          <%= link_to "プライバシー規約", "#" %>
+          に同意するものとみなされます。
+        </div>
+
+      </div>
+    <% end %>
+
+    <div class="box-newusr">
+      <p><span>------</span> Hajime-mascleのご利用は初めてですか？ <span>------</span></p>
+      <%= link_to "アカウントを作成", new_user_registration_path %>
     </div>
-    <%= f.email_field :email, class:"input-default", placeholder:"PC・携帯どちらでも可", autofocus: true %>
-  </div>
-  <div class="form-group">
-    <div class='form-text-wrap'>
-      <label class="form-text">パスワード</label>
-      <span class="indispensable">必須</span>
-    </div>
-    <%= f.password_field :password, class:"input-default", placeholder:"" %>
-  </div>
-  <div class='login-btn'>
-    <%= f.submit "ログイン" ,class:"login-red-btn" %>
   </div>
 </div>
-<% end %>
