@@ -23,6 +23,12 @@
   margin-bottom: 13px;
 }
 
+.textfield {
+  resize: none;
+  width:300px;
+  height:30px;
+}
+
 .box-email {
   margin-bottom: 22px;
 }

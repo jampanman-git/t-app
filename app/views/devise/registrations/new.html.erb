@@ -3,10 +3,9 @@
 
     <%= form_with model: @user, url:user_registration_path ,class: 'registration-main', local: true do |f| %>
       <h1 class='signup-title'>SIGN UP</h1>
-      
       <div class="box-nickname">
         <%= f.label :nickname, "Nickname" %><br />
-        <%= f.text_area :nickname, class:"input-default", placeholder:"例) マッスル太郎", maxlength:"6" %>
+        <%= f.text_field :nickname, class:"textfield", placeholder:"例) マッスル太郎", maxlength:"6" %>
       </div>
       <div class="box-email">
         <%= f.label :email, "Email" %><br />
