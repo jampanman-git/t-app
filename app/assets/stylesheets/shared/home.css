@@ -35,7 +35,6 @@
 }
 
 .data-nothing{
-  margin: 50px 15% 0 15%;
   padding: 0 10vh;
   height: 70vh;
   display: flex;
@@ -49,7 +48,6 @@
 }
 
 .friends-data-nothing{
-  margin: 50px 15% 0 15%;
   padding: 0 10vh;
   height: 70vh;
   display: flex;
@@ -60,4 +58,18 @@
   background-color:rgba(255, 255, 255, 0.8);
   background-blend-mode:lighten;
   background-position: center center;
+}
+
+
+@media screen and (min-width: 600px){
+  .data-nothing, .friends-data-nothing{
+    margin: 50px 15% 0 15%;
+  }
+}
+
+
+@media screen and (max-width: 599px){
+  .data-nothing, .friends-data-nothing{
+    margin: 50px 0 0 0;
+  }
 }
