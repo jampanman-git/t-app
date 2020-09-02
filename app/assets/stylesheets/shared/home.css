@@ -95,10 +95,10 @@
 
 @media screen and (max-width: 599px){
   .graphs{
-    margin: 50px 0 0 0;
+    margin: 50px 2% 0 2%;
   }
 
   .data-nothing, .friends-data-nothing{
-    margin: 50px 0 0 0;
+    margin: 50px 2% 0 2%;
   }
 }
