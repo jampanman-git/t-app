@@ -1,10 +1,11 @@
-.my-data{
-  margin: 70px auto;
+.main{
+  background: -webkit-linear-gradient(left, #7E898F 0%, #636C75 100%), -webkit-radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.55) 100%), -webkit-radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.08) 63%);
+  background: linear-gradient(90deg, #7E898F 0%, #636C75 100%), radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.55) 100%), radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.08) 63%);
+  bottom: 0;
 }
 
-.main{
-  width: 100vw;
-  background-color: white;
+.my-data{
+  margin: 60px auto;
 }
 
 .data-nothing{
@@ -21,4 +22,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.graphs{
+  margin: 50px 15% 70px 15%;
+}
+
+.each-data{
+  background-color: white;
+  border: 25px solid rgb(220, 220, 220);
+}
+
+.each-friend-data{
+  background-color: white;
+  border: 25px solid rgb(220, 220, 220);;
 }
