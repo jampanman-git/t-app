@@ -8,10 +8,6 @@
   margin: 60px auto;
 }
 
-.graphs{
-  margin: 50px 15% 0 15%;
-}
-
 .each-data{
   background-color: white;
   margin-top: 50px;
@@ -60,8 +56,14 @@
   background-position: center center;
 }
 
+/* RESPONSIVE 設定
+------------------------------------------------------------*/
 
 @media screen and (min-width: 600px){
+  .graphs{
+    margin: 50px 15% 0 15%;
+  }
+
   .data-nothing, .friends-data-nothing{
     margin: 50px 15% 0 15%;
   }
@@ -69,6 +71,10 @@
 
 
 @media screen and (max-width: 599px){
+  .graphs{
+    margin: 50px 0 0 0;
+  }
+
   .data-nothing, .friends-data-nothing{
     margin: 50px 0 0 0;
   }
