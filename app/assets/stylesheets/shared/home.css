@@ -30,6 +30,10 @@
   font-size: 15px;
 }
 
+.lets-train, .lets-make{
+  font-size: 28px;
+}
+
 .data-nothing{
   padding: 0 10vh;
   height: 70vh;
