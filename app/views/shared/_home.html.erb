@@ -1,4 +1,7 @@
 <div class='main'>
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
 
   <%# 自分のデータ %>
   <div class="my-data">
@@ -35,19 +38,18 @@
 
     <%if @follows != [] %> 
       <div class="graphs">
-        
-          <% @f_datas.each do |data|%>
-            <div class="each-friend-data">
-              <h4 class="theme">＜１週間分の総回数の推移＞</h4>
-              <% friend = @follows[@num]%>
-              <%= friend.nickname %>
-              <% @num += 1 %>
-              <%= line_chart data, curve: false %>
-            </div>
-          <%end%>
-        </div>
+        <% @f_datas.each do |data|%>
+          <div class="each-data">
+            <h4 class="theme">＜１週間分の総回数の推移＞</h4>
+            <% friend = @follows[@num]%>
+            <%= friend.nickname %>
+            <% @num += 1 %>
+            <%= line_chart data, curve: false %>
+          </div>
+        <%end%>
+        <div class='space'></div>
       </div>
-    <%else %>
+    <%else%>
       <div class="friends-data-nothing">
         <h1 class="data-nothing">友達を登録しましょう！</h1>
         <div class="training-btn"><%= link_to 'フレンド登録', users_path, class: "friends"%></div> 
