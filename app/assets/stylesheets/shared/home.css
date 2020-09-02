@@ -21,6 +21,11 @@
   height: 60px;
 }
 
+.title{
+  font-family: 'Vollkorn', serif;
+  font-size: 25px;
+}
+
 .data-nothing{
   padding: 0 10vh;
   height: 70vh;
