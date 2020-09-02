@@ -1,47 +1,38 @@
-<h2>Sign up</h2>
+<div class="box">
+  <div class="box-inner">
 
-<%= form_with model: @user, url:user_registration_path ,class: 'registration-main', local: true do |f| %>
-<div class='form-wrap'>
-  <div class='form-header'>
-    <h1 class='form-header-text'>
-      会員情報入力
-    </h1>
-  </div>
-
-  <%= render "devise/shared/error_messages", resource: resource %>
-
-  <div class="form-group">
-    <div class='form-text-wrap'>
-      <label class="form-text">ニックネーム</label>
-      <span class="indispensable">必須</span>
-    </div>
-    <%= f.text_area :nickname, class:"input-default", placeholder:"例) マッスル太郎", maxlength:"6" %>
-  </div>
-  <div class="form-group">
-    <div class='form-text-wrap'>
-      <label class="form-text">メールアドレス</label>
-      <span class="indispensable">必須</span>
-    </div>
-    <%= f.email_field :email, class:"input-default", placeholder:"PC・携帯どちらでも可", autofocus: true %>
-  </div>
-  <div class="form-group">
-    <div class='form-text-wrap'>
-      <label class="form-text">パスワード</label>
-      <span class="indispensable">必須</span>
-    </div>
-    <%= f.password_field :password, class:"input-default", placeholder:"6文字以上の半角英数字" %>
-    <p class='info-text'>※英字と数字の両方を含めて設定してください</p>
-  </div>
-  <div class="form-group">
-    <div class='form-text-wrap'>
-      <label class="form-text">パスワード(確認)</label>
-      <span class="indispensable">必須</span>
-    </div>
-    <%= f.password_field :password, class:"input-default", placeholder:"同じパスワードを入力して下さい" %>
-  </div>
-
-  <div class='register-btn'>
-    <%= f.submit "会員登録" ,class:"register-red-btn" %>
+    <%= form_with model: @user, url:user_registration_path ,class: 'registration-main', local: true do |f| %>
+      <h1 class='signup-title'>SIGN UP</h1>
+      
+      <div class="box-nickname">
+        <%= f.label :nickname, "Nickname" %><br />
+        <%= f.text_area :nickname, class:"input-default", placeholder:"例) マッスル太郎", maxlength:"6" %>
+      </div>
+      <div class="box-email">
+        <%= f.label :email, "Email" %><br />
+        <%= f.email_field :email, class:"input-default", placeholder:"PC・携帯どちらでも可", autofocus: true %>
+      </div>
+      <div class="box-password">
+        <div class="column-left">
+          <%= f.label :password, "Password" %>
+        </div>
+        <%= f.password_field :password, class:"input-default", placeholder:"6文字以上の半角英数字" %>
+      </div>
+      <div class='form-text-wrap'>
+        <label class="form-text">パスワード(確認)</label>
+        <%= f.password_field :password, class:"input-default", placeholder:"同じパスワードを入力して下さい" %>
+      </div>
+      <div class="box-login">
+        <%= f.submit "Log in" %>
+        <div class="legal-text">
+          続行することで、Haijime-mascleの
+          <%= link_to "利用規約", "#" %>
+          および
+          <%= link_to "プライバシー規約", "#" %>
+          に同意するものとみなされます。
+        </div>
+      </div>
+    <% end %>
+    
   </div>
 </div>
-<% end %>
