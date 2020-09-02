@@ -1,84 +1,92 @@
-.registration-main {
-  width: 100%;
-  min-width: 800px;
-  height: 100%;
-  background-color: #f5f5f5;
-  display: flex;
-  justify-content: center;
-}
-
-.form-wrap {
-  width: 50%;
-  background-color: white;
-  padding-bottom: 70px;
-}
-
-.form-header {
-  width: 100%;
-  height: 120px;
-  text-align: center;
-  font-size: 22px;
-  margin-left: 20px;
-}
-
-.form-header-text {
-  line-height: 100px;
-  border-bottom: 1px solid #f5f5f5;
-  font-weight: bold;
-}
-
-.form-group {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding-top: 20px;
-}
-
-.form-group:first-child {
-  padding: 0;
-}
-
-.form-text-wrap {
-  width: 100%;
-  height: 20%;
-}
-
-.form-text {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.input-default {
-  width: 100%;
-  margin-top: 5px;
-  height: 48px;
-  padding: 10px 16px 8px;
+.box {
+  width: 350px;
+  height: 450px;
+  margin: 60px auto 0;
   border-radius: 4px;
-  border: 1px solid #ccc;
-  background: #fff;
-  font-size: 16px;
+  border: 1px #ddd solid;
+}
+
+.box-inner {
+  padding: 20px 26px;
+}
+
+.signup-title {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  color: #111111;
+}
+
+.box-nickname {
+  margin-bottom: 13px;
+}
+
+.text-field {
   resize: none;
+  width:300px;
+  height:30px;
 }
 
-.info-text {
-  color: #888;
-  font-size: 15px;
-  margin-top: 3px;
+.box-email {
+  margin-bottom: 22px;
 }
 
-.register-btn {
-  width: 50%;
-  margin: 0 auto;
+.box-password {
+  margin-bottom: 22px;
 }
 
-.register-red-btn {
+.box-confirmation {
+  margin-bottom: 22px;
+}
+
+.box-nickname label, .box-email label, .box-password label, .box-confirmation label {
+  font-weight: 700;
+  font-size: 13px;
+  padding-left: 2px;
+  padding-bottom: 2px;
+}
+
+.box-email input[type="email"], .box-password input[type="password"],.box-confirmation input[type="password"] {
+  border-style: none;
+  box-sizing: border-box;
   width: 100%;
-  background: #ea352d;
-  border: 1px solid #ea352d;
-  color: #fff;
-  line-height: 48px;
-  font-size: 14px;
-  cursor: pointer;
-  margin:30px 16px 0 16px;
+  height: 31px;
+  border: 1px solid #a6a6a6;
+  box-shadow: 0 1px 0 rgba(0,0,0,.07) inset;
+  border-radius: 3px;
+  padding: 0 7px;
 }
+
+.column-left {
+  float: left;
+}
+
+.box-password a {
+  font-size: 13px;
+}
+
+.box-login {
+  margin-bottom: 26px;
+}
+
+.box-login input[type="submit"] {
+  border-style: none;
+  width: 100%;
+  height: 31px;
+  background: linear-gradient(to bottom,#c2e7ed,#6fbfea);
+  border-radius: 3px;
+  border: 1px black solid;
+}
+
+.box-login input[type="submit"]:hover {
+  cursor: pointer;
+  background: #56b6d3;
+}
+
+.legal-text {
+  margin-top: 18px;
+  font-size: 12px;
+}
+

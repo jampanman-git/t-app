@@ -12,9 +12,8 @@ body{
 }
 
 .navbar-wrap {
-  height: 50px;
+  height: 60px;
   background-color: #f0f0f0;
-  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -26,11 +25,12 @@ body{
 
 .heading {
   width: 50%;
-  margin-left: 15px;
+  height: 100%;
+  margin-left: 7px;
 }
 
 .logo-icon {
-  width: 7vw;
+  width: 70px;
   height: 100%
 }
 
