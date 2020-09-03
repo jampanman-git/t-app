@@ -4,6 +4,10 @@
   background-blend-mode: screen; 
 }
 
+.a-word{
+  text-align:center;
+}
+
 .good-job{
   margin-top: 150px;
 }
