@@ -4,8 +4,12 @@
   background-blend-mode: screen; 
 }
 
-.good-job{
-  margin-top: 60px;
+.create-block{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 600px){
