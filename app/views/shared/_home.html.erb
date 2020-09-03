@@ -44,7 +44,7 @@
           <div class="each-data">
             <h4 class="theme">＜１週間分の総回数の推移＞</h4>
             <% friend = @follows[@num]%>
-            <%= friend.nickname %>
+            <div><%= friend.nickname %>さんのデータ</div>
             <% @num += 1 %>
             <%= line_chart data, curve: false %>
           </div>
