@@ -1,11 +1,17 @@
 .create-wrapper{
-  background: -webkit-linear-gradient(top right, #E2E8E6 0%, #CDD3CD 100%), -webkit-linear-gradient(right, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
-  background: linear-gradient(to bottom left, #E2E8E6 0%, #CDD3CD 100%), linear-gradient(to left, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
-  background-blend-mode: screen; 
+  
 }
 
 .a-word{
   text-align:center;
+  margin-bottom: 40px;
+}
+
+.comments{
+  background-image: url("Otsukare.jpeg");
+  background-color:rgba(255, 255, 255, 0.8);
+  background-blend-mode:lighten;
+  background-position: center center;
 }
 
 .good-job{
