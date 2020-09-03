@@ -1,7 +1,26 @@
+.create-wrapper{
+  background: -webkit-linear-gradient(top right, #E2E8E6 0%, #CDD3CD 100%), -webkit-linear-gradient(right, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
+  background: linear-gradient(to bottom left, #E2E8E6 0%, #CDD3CD 100%), linear-gradient(to left, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
+  background-blend-mode: screen; 
+}
+
 .create-block{
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (min-width: 600px){
+  .comments{
+    margin: 50px 15% 0 15%;
+  }
+}
+
+
+@media screen and (max-width: 599px){
+  .comments{
+    margin: 50px 2% 0 2%;
+  }
 }
