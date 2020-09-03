@@ -29,10 +29,15 @@
   margin: 20px 0;
 }
 
+.protein-food{
+  
+  background : linear-gradient(transparent 40%, rgba(0, 255, 0, 0.6) 60%); 
+}
+
 .to-home{
   display: inline-block;
   text-decoration: none;
-  margin-top: 20px;
+  margin: 25px 0;
   padding: 0 30px;
   font-size: 19px;
   height: 40px;
