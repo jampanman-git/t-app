@@ -1,39 +1,17 @@
 .test{
-  background: -webkit-linear-gradient(top right, #E2E8E6 0%, #CDD3CD 100%), -webkit-linear-gradient(right, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
-  background: linear-gradient(to bottom left, #E2E8E6 0%, #CDD3CD 100%), linear-gradient(to left, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
-  background-blend-mode: screen; 
-  height: 100vh;
-}
-
-.space-top{
-  height:80px;
-}
-
-.a-word{
-  text-align:center;
-  margin-bottom: 40px;
+  position: relative;
+  overflow:hidden;
+  width:100%;
+  height:700px;
+  margin: 50px auto;
 }
 
 .comments{
-  background-image: url("Otsukare.jpeg");
-  background-color:rgba(255, 255, 255, 0.8);
-  background-blend-mode:lighten;
-  background-position: center center;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  line-height: 1.2;
+  text-align: center;
 }
 
-.good-job{
-  margin-top: 60px;
-}
-
-@media screen and (min-width: 600px){
-  .comments{
-    margin: 50px 15% 0 15%;
-  }
-}
-
-
-@media screen and (max-width: 599px){
-  .comments{
-    margin: 50px 2% 0 2%;
-  }
-}
+.
