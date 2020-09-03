@@ -1,7 +1,53 @@
-.create-block{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.test{
+  height: auto;
+  width: 100%;
+  padding-top: 50px;
+  background-image: url("Otsukare.jpeg");
+  background-color: rgb(198, 231, 236);
+  background-blend-mode:lighten;
+  background-position: center center;
+}
+
+.comments{
+  padding-top: 12%;
+  text-align: center;
+  margin: 0 10%;
+}
+
+.good-job{
+  font-size: 40px;
+  font-family: 'Pacifico', cursive;
+  font-weight:normal;
+}
+
+.lets-eat{
+  font-family: 'Pacifico', cursive;
+  font-weight:normal;
+}
+
+.description-contents{
+  margin: 20px 0;
+}
+
+.protein-food{
+  
+  background : linear-gradient(transparent 40%, rgba(0, 255, 0, 0.6) 60%); 
+}
+
+.to-home{
+  display: inline-block;
+  text-decoration: none;
+  margin: 25px 0;
+  padding: 0 30px;
+  font-size: 19px;
+  height: 40px;
+  line-height: 40px!;
+  background: #51587b;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  transition: .4s;
+}
+
+.to-home:active {
+  background: #2c3148;
 }
