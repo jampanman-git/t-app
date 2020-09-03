@@ -2,27 +2,31 @@
 
   <%= render "shared/navbar"%>
   
-  <div class="comments">
-    <div class='a-word'>
-      <h1 class='good-job'>
-      お疲れ様です！
-      </h1>
-      <h2 class='lets-eat'>
-      30分以内にタンパク質を摂取しましょう！
-      </h2>
+  <div class='test'>
+    <div class='space-top'></div>
+    <div class="comments">
+      <div class='a-word'>
+        <h1 class='good-job'>
+        お疲れ様です！
+        </h1>
+        <h2 class='lets-eat'>
+        30分以内にタンパク質を摂取しましょう！
+        </h2>
+      </div>
+      <h3 class=about-protein>
+      ＜タンパク質に関して＞
+      </h3>
+      <div class='description'>
+      タンパク質と聞くと『プロテイン』が思い浮かぶのではないでしょうか。しかしプロテインは安くても月々3000円程度、こだわるならば軽く1万円は超えます。「そんなに高いお金払えない」といった悩みに応えて最高のプロテインを紹介します。それは<span class='protein-food'>納豆卵かけご飯</span>です。卵と納豆はご飯にかけると1食20g近くタンパク質を摂取できその含有量はプロテインにも引けを取りません。しかも卵1個20円、納豆1個30円、ご飯1杯40円と仮定しても1回90円ですし、プロテインと異なり食事として生活に組み込むことができます。また、タンパク質はトレーニング後30分以内に取り込むことで身体への吸収が効率的になります。皆さんもぜひお試しあれ！
+      </div>
+      <h3 class='about-protein'>
+      ＜高タンパクな食材＞
+      </h3>
+      <div class='description'>
+      鶏の胸肉、鶏のささみ、生ハム、牛もも肉、ローストビーフ、いわし丸干し、たらこ、スルメ、卵、納豆、きな粉、油揚げ、プロセスチーズ etc...
+      </div>
+      <div class="to-home"><%= link_to 'トップページへ戻る', trainings_path, class: "sign-in" %></div>
     </div>
-    <h3 class=about-protein>
-    ＜タンパク質に関して＞
-    </h3>
-    <div class='description'>
-    タンパク質と聞くと『プロテイン』が思い浮かぶのではないでしょうか。しかしプロテインは安くても月々3000円程度、こだわるならば軽く1万円は超えます。「そんなに高いお金払えない」といった悩みに応えて最高のプロテインを紹介します。それは<span class='protein-food'>納豆卵かけご飯</span>です。卵と納豆はご飯にかけると1食20g近くタンパク質を摂取できその含有量はプロテインにも引けを取りません。しかも卵1個20円、納豆1個30円、ご飯1杯40円と仮定しても1回90円ですし、プロテインと異なり食事として生活に組み込むことができます。また、タンパク質はトレーニング後30分以内に取り込むことで身体への吸収が効率的になります。皆さんもぜひお試しあれ！
-    </div>
-    <h3 class='about-protein'>
-    ＜高タンパクな食材＞
-    </h3>
-    <div class='description'>
-    鶏の胸肉、鶏のささみ、生ハム、牛もも肉、ローストビーフ、いわし丸干し、たらこ、スルメ、卵、納豆、きな粉、油揚げ、プロセスチーズ etc...
-    </div>
-    <div class="to-home"><%= link_to 'トップページへ戻る', trainings_path, class: "sign-in" %></div>
+    <div class='space-bottom'></div>
   </div>
 </div>
