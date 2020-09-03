@@ -4,6 +4,10 @@
   background-blend-mode: screen; 
 }
 
+.good-job{
+  margin-top: 150px;
+}
+
 .create-block{
   width: 100vw;
   height: 100vh;
