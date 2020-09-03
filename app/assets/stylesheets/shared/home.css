@@ -1,10 +1,37 @@
-.my-data{
-  margin: 70px auto;
+.main{
+  background: -webkit-linear-gradient(top right, #E2E8E6 0%, #CDD3CD 100%), -webkit-linear-gradient(right, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
+  background: linear-gradient(to bottom left, #E2E8E6 0%, #CDD3CD 100%), linear-gradient(to left, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%);
+  background-blend-mode: screen; 
 }
 
-.main{
-  width: 100vw;
+.my-data{
+  margin: 60px auto;
+}
+
+.each-data{
   background-color: white;
+  margin-top: 50px;
+  border: 1px solid rgb(220, 220, 220);
+}
+
+.space{
+  height: 60px;
+}
+
+.title{
+  font-family: 'Vollkorn', serif;
+  margin: 10px 0 0 10px;
+  font-size: 28px;
+}
+
+.theme{
+  padding: 8px 5px;
+  font-family: arial,verdana,sans-serif;
+  font-size: 15px;
+}
+
+.lets-train, .lets-make{
+  font-size: 28px;
 }
 
 .data-nothing{
@@ -13,6 +40,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background-image: url("abs.jpg");
+  background-color:rgba(255, 255, 255, 0.8);
+  background-blend-mode:lighten;
+  background-position: center center;
 }
 
 .friends-data-nothing{
@@ -21,4 +53,52 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  background-image: url("leg.jpg");
+  background-color:rgba(255, 255, 255, 0.8);
+  background-blend-mode:lighten;
+  background-position: center center;
+}
+
+.btn-secondary {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 0 30px;
+  font-size: 19px;
+  height: 40px;
+  line-height: 40px!;
+  background: #51587b;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  transition: .4s;
+}
+
+.btn-secondary:active {
+  background: #2c3148;
+}
+
+/* RESPONSIVE 設定
+------------------------------------------------------------*/
+
+@media screen and (min-width: 600px){
+  .graphs{
+    margin: 50px 15% 0 15%;
+  }
+
+  .data-nothing, .friends-data-nothing{
+    margin: 50px 15% 0 15%;
+  }
+}
+
+
+@media screen and (max-width: 599px){
+  .graphs{
+    margin: 50px 2% 0 2%;
+  }
+
+  .data-nothing, .friends-data-nothing{
+    margin: 50px 2% 0 2%;
+  }
 }

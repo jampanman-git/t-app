@@ -88,6 +88,20 @@ section h2{
   }
 }
 
+@media only screen and (max-width: 1199px){
+  section h2{
+    padding: 50px 0 20px 0;
+  }
+  
+  .sec01 h2{
+    padding: 70px 0 20px;
+  }
+  
+  .vMid{
+    padding: 0 20px;
+  }
+}
+
 @media only screen and (min-width: 800px){
   body{
     font-size:14px;
@@ -114,19 +128,5 @@ section h2{
 
   #slogan h2{
     font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 1199px){
-  section h2{
-    padding: 50px 0 20px 0;
-  }
-  
-  .sec01 h2{
-    padding: 70px 0 20px;
-  }
-  
-  .vMid{
-    padding: 0 20px;
   }
 }

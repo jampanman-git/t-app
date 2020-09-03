@@ -26,12 +26,12 @@ body{
 .heading {
   width: 50%;
   height: 100%;
-  margin-left: 7px;
 }
 
 .logo-icon {
   width: 70px;
   height: 100%
+  
 }
 
 .navbar {
@@ -149,13 +149,13 @@ body{
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/
 
-@media screen and (min-width: 830px){
+@media screen and (min-width: 865px){
   .menu-smafo{
     display: none;
   }
 }
   
-@media screen and (max-width: 829px){
+@media screen and (max-width: 864px){
 
   .menu-pc{
     display: none;
