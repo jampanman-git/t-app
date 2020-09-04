@@ -1,5 +1,5 @@
 .training-wrapper{
-  background-color: #93ff93;
+  background-color: rgb(38, 38, 82);
   padding-top: 150px;
   padding-bottom: 15vh;
   height: auto;
@@ -67,19 +67,53 @@
 
 .box-finish {
   margin-bottom: 26px;
+  text-align: center;
 }
 
 .box-finish input[type="submit"] {
-  border-style: none;
-  width: 100%;
-  height: 31px;
-  background: linear-gradient(to bottom,#c2e7ed,#6fbfea);
-  border-radius: 3px;
-  border: 1px black solid;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 30px;
+  font-size: 19px;
+  height: 40px;
+  line-height: 40px!;
+  background: #51587b;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  transition: .4s;
 }
 
-.box-finish input[type="submit"]:hover {
-  cursor: pointer;
-  background: #56b6d3;
+.box-finish input[type="submit"]:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: solid 21px white;
+  border-bottom: solid 41px transparent;
+  z-index: 1;
+  transition: .4s;
 }
+
+.box-finish input[type="submit"]:after {
+  position: absolute;
+  content: '';
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: solid 21px transparent;
+  border-bottom: solid 41px white;
+  z-index: 1;
+  transition: .4s;
+}
+
+.box-finish input[type="submit"]:hover:before, .box-finish input[type="submit"]:hover:after {
+  border-left-width: 25px;
+}
+
 
