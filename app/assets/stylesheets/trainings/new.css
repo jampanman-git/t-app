@@ -1,7 +1,7 @@
 .t-boxes{
   width: 350px;
-  height: 450px;
-  margin: 60px auto 0;
+  height: 540px;
+  margin: 100px auto;
   border-radius: 4px;
   border: 1px #ddd solid;
 }
@@ -32,6 +32,10 @@
 }
 
 .box-abs {
+  margin-bottom: 22px;
+}
+
+.box-leg {
   margin-bottom: 22px;
 }
 
