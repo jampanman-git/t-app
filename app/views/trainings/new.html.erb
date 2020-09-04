@@ -1,51 +1,41 @@
-<div class="training-page-wrapper">
+<div class="training-wrapper">
 
   <%= render "shared/navbar"%>
 
-  <div class="t-menu">
-    <div class="t-pack">
-      <h1 class="t-title">Trainig</h1>
+  <div class='t-boxes'>
+    <div class="t-inner">
 
       <%= form_with model: @training, url:trainings_path, local: true do |f| %>
-        <div class="t-part-blobk">
-          <div class="t-content">
-            <h4 class="t-part">腕筋</h4>
-            <span class="indispensable">必須</span>
-          </div>
-          <div class="counter"><%= f.number_field :arm, class:"detail-counter", placeholder:"0"%>回</div>
+        <h1 class="t-title">Trainig</h1>
+
+        <div class="box-arm">
+          <h4 class="t-part">腕筋</h4>
+          <div class="counter"><%= f.number_field :arm, class:"detail-counter", placeholder:"回数を入力してください (半角数字 /必須)"%></div>
         </div>
 
-        <div class="t-part-blobk">
-          <div class="t-content">
-            <h4 class="t-part">背筋</h4>
-            <span class="indispensable">必須</span>
-          </div>
-          <div class="counter"><%= f.number_field :spine, class:"detail-counter", placeholder:"0"%>回</div>
+        <div class="box-spine">
+          <h4 class="t-part">背筋</h4>
+          <div class="counter"><%= f.number_field :spine, class:"detail-counter", placeholder:"回数を入力してください (半角数字 /必須)"%></div>
         </div>
 
-        <div class="t-part-blobk">
-          <div class="t-content">
-            <h4 class="t-part">腹筋</h4>
-            <span class="indispensable">必須</span>
-          </div>
-          <div class="counter"><%= f.number_field :abs, class:"detail-counter", placeholder:"0"%>回</div>
+        <div class="box-abs">
+          <h4 class="t-part">腹筋</h4>
+          <div class="counter"><%= f.number_field :abs, class:"detail-counter", placeholder:"回数を入力してください (半角数字 /必須))"%></div>
         </div>
 
-        <div class="t-part-blobk">
-          <div class="t-content">
-            <h4 class="t-part">脚筋</h4>
-            <span class="indispensable">必須</span>
-          </div>
-          <div class="counter"><%= f.number_field :leg, class:"detail-counter", placeholder:"0"%>回</div>
+        <div class="box-leg">
+          <h4 class="t-part">脚筋</h4>
+          <div class="counter"><%= f.number_field :leg, class:"detail-counter", placeholder:"回数を入力してください (半角数字 /必須)"%></div>
         </div>
 
 
         <%# 終了ボタン %>
-        <div class="finish-btn-contents">
-          <%= f.submit "Finish" ,class:"finish-btn" %>
+        <div class="box-finish">
+          <%= f.submit "Finish" %>
         </div>
       <% end %>
     </div>
   </div>
+
 
 </div>
