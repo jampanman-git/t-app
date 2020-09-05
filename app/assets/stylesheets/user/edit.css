@@ -59,11 +59,11 @@
   font-size: 13px;
 }
 
-.box-signup {
+.box-update {
   margin-bottom: 26px;
 }
 
-.box-signup input[type="submit"] {
+.box-update input[type="submit"] {
   border-style: none;
   width: 100%;
   height: 31px;
@@ -72,7 +72,7 @@
   border: 1px black solid;
 }
 
-.box-signup input[type="submit"]:hover {
+.box-update input[type="submit"]:hover {
   cursor: pointer;
   background: #56b6d3;
 }
