@@ -33,16 +33,6 @@
   object-fit: contain;
 }
 
-.item-price-box>.item-price {
-  font-size: 4vh;
-  font-weight: bold;
-}
-
-.item-price-box>.item-postage {
-  font-size: 16px;
-}
-
-
 .item-red-btn {
   text-align: center;
   background-color: #ea352d;
