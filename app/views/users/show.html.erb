@@ -1,31 +1,31 @@
 <%= render "shared/navbar" %>
 
-<div class="item-show">
-  <div class="item-box">
-    <h2 class="name">
+<div class="user-show">
+  <div class="user-box">
+    <h2 class="profile">
       My Profile
     </h2>
-    <div class='item-img-content'>
-      <%= image_tag current_user.image ,class:"item-box-img" %>
+    <div class='user-img-content'>
+      <%= image_tag current_user.image ,class:"user-box-img" %>
     </div>
 
-    <%= link_to ' Edit', edit_user_registration_path, method: :get, class: "item-red-btn" %>
+    <%= link_to ' Edit', edit_user_registration_path, method: :get, class: "user-edit-btn" %>
 
     <table class="detail-table">
       <tr>
-        <th class="detail-item">ニックネーム</th>
+        <th class="detail-user">ニックネーム</th>
         <td class="detail-value"><%= current_user.nickname %></td>
       </tr>
       <tr>
-        <th class="detail-item"><%= link_to 'フォロー数'%></th>
+        <th class="detail-user"><%= link_to 'フォロー数'%></th>
         <td class="detail-value"><%= current_user.follow_count %></td>
       </tr>
       <tr>
-        <th class="detail-item"><%= link_to 'フォロワー数' %></th>
+        <th class="detail-user"><%= link_to 'フォロワー数' %></th>
         <td class="detail-value"><%= current_user.followers_count %></td>
       </tr>
       <tr>
-        <th class="detail-item">メールアドレス</th>
+        <th class="detail-user">メールアドレス</th>
         <td class="detail-value"><%= current_user.email %></td>
       </tr>
     </table>

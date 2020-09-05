@@ -1,4 +1,4 @@
-.item-show {
+.user-show {
   background-color: #f8f8f8;
   width: 100vw;
   display: flex;
@@ -7,7 +7,7 @@
 
 }
 
-.item-box {
+.user-box {
   background-color: #FFF;
   width: 70vw;
   min-width: 1200px;
@@ -17,13 +17,13 @@
   align-items: center;
 }
 
-.item-box>.name {
+.profile {
   text-align: center;
   font-weight: bold;
   font-size: 25px;
 }
 
-.item-box-img {
+.user-box-img {
   height: 50vh;
   width: 60vw;
   min-height: 500px;
@@ -31,7 +31,7 @@
   object-fit: contain;
 }
 
-.item-red-btn {
+.user-edit-btn {
   text-align: center;
   background-color: #ea352d;
   font-size: 24px;
@@ -45,7 +45,7 @@
   width: 80vw;
 }
 
-.detail-item {
+.detail-user {
   width: 20%;
   background-color: #eee;
   border: 1px solid #dedede;
