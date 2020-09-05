@@ -19,7 +19,7 @@
   color: #111111;
 }
 
-.box-nickname {
+.box-image {
   margin-bottom: 13px;
 }
 
@@ -29,7 +29,7 @@
   height:30px;
 }
 
-.box-email, .box-password, .box-confirmation {
+.box-nickname, .box-email, .box-password, .box-confirmation {
   margin-bottom: 22px;
 }
 
