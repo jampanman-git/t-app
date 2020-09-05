@@ -38,7 +38,8 @@
   padding: 0 30px;
   font-size: 19px;
   height: 40px;
-  width: 25vw;
+  width: 15vw;
+  min-width: 200px;
   line-height: 40px!;
   background: #51587b;
   font-size: 20px;
