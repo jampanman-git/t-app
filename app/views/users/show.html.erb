@@ -18,11 +18,11 @@
           <td class="detail-value"><%= current_user.nickname %></td>
         </tr>
         <tr>
-          <th class="detail-item">フォロー数</th>
+          <th class="detail-item"><%= link_to 'フォロー数', {controller: :users,action: :follow_list,user_id: current_user.id} %></th>
           <td class="detail-value"><%= current_user.follow_count %></td>
         </tr>
         <tr>
-          <th class="detail-item">フォロワー数</th>
+          <th class="detail-item"><%= link_to 'フォロワー数', {controller: :users,action: :follower_list,user_id: current_user.id} %></th>
           <td class="detail-value"><%= current_user.followers_count %></td>
         </tr>
         <tr>
