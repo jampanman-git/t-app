@@ -1,22 +1,36 @@
-<div class='mypage-main'>
+<%= render "shared/navbar" %>
 
-  <%= render "shared/navbar"%>
-
-  <div class='mypage-contets'>
-    <div class='my-image'>
-      <%if current_user.image.present? %>
-        <%= image_tag current_user.image, class: 'my-box' %>
-      <%else %>
-        <img class='nothing-image' src="assets/no_image.png" alt="ユーザー画像です">
-      <%end %>
+<div class="item-show">
+  <div class="item-box">
+    <h2 class="name">
+      My Profile
+    </h2>
+    <div class='item-img-content'>
+      <%= image_tag current_user.image ,class:"item-box-img" %>
     </div>
+
+    <%= link_to '商品の編集', '#', method: :get, class: "item-red-btn" %>
+
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-item">ニックネーム</th>
+          <td class="detail-value"><%= current_user.nickname %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">フォロー数</th>
+          <td class="detail-value"><%= '#' %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">フォロワー数</th>
+          <td class="detail-value"><%= '#' %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">メールアドレス</th>
+          <td class="detail-value"><%= current_user.email %></td>
+        </tr>
+      </tbody>
+    </table>
     
-    <div class='my-nickname'>
-      <div class='my-box'><%= current_user.nickname%></div>
     </div>
   </div>
-
-  <div class='edit-btn'>
-  <%= link_to '編集', edit_user_registration_path, method: :get %>
-  </div>
-</div>
