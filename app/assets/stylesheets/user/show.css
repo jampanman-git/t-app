@@ -31,18 +31,23 @@
   object-fit: contain;
 }
 
-.user-edit-btn {
-  text-align: center;
-  background-color: #ea352d;
-  font-size: 24px;
-  font-weight: bold;
-  color: #FFF;
-  margin: 20px 0px;
-  padding: 2vh 10vw;
+.edit-btn {
+  display: inline-block;
+  text-decoration: none;
+  margin: 25px 0;
+  padding: 0 30px;
+  font-size: 19px;
+  height: 40px;
+  width: 25vw;
+  line-height: 40px!;
+  background: #51587b;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  transition: .4s;
 }
 
 .detail-table {
-  width: 80vw;
+  width: 70vw;
 }
 
 .detail-user {

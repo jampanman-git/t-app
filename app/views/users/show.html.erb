@@ -9,7 +9,9 @@
       <%= image_tag current_user.image ,class:"user-box-img" %>
     </div>
 
-    <%= link_to ' Edit', edit_user_registration_path, method: :get, class: "user-edit-btn" %>
+    <%=link_to(edit_user_registration_path) do %>
+        <button class="edit-btn" >Edit</button>
+    <%end%>
 
     <table class="detail-table">
       <tr>
