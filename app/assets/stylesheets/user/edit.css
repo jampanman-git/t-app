@@ -1,3 +1,11 @@
+.edit-box {
+  width: 350px;
+  height: 520px;
+  margin: 100px auto;
+  border-radius: 4px;
+  border: 1px #ddd solid;
+}
+
 .edit-inner {
   padding: 35px 26px;
 }
@@ -52,6 +60,7 @@
 }
 
 .box-update {
+  margin-top: 35px;
   margin-bottom: 26px;
 }
 
