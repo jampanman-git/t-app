@@ -29,15 +29,7 @@
   height:30px;
 }
 
-.box-email {
-  margin-bottom: 22px;
-}
-
-.box-password {
-  margin-bottom: 22px;
-}
-
-.box-confirmation {
+.box-email, .box-password, .box-confirmation {
   margin-bottom: 22px;
 }
 
