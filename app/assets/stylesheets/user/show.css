@@ -33,13 +33,6 @@
   object-fit: contain;
 }
 
-.item-price-box {
-  margin: 25px 0px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 .item-price-box>.item-price {
   font-size: 4vh;
   font-weight: bold;
@@ -60,27 +53,9 @@
   padding: 2vh 10vw;
 }
 
-.or-text {
-  font-size: 20px;
-}
-
-.item-destroy {
-  background-color: lightgray;
-  text-align: center;
-  font-size: 24px;
-  color: black;
-  margin: 20px 0px;
-  padding: 2vh 10vw;
-}
-
-.item-explain-box {
-  font-size: 18px;
-  margin: 40px 0px;
-}
-
 .detail-table {
   margin-bottom: 30px;
-  width: 100%;
+  width: 50vh;
 }
 
 .detail-item {
