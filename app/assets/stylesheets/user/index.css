@@ -1,3 +1,15 @@
 .friends-wrapper{
   margin-top: 80px;
 }
+
+.friends-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.my-friends-data{
+  display: flex;
+  margin-bottom: 15px;
+}
