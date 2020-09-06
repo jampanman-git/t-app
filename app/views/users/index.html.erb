@@ -20,18 +20,29 @@
       <% @users.each do |user|%>
         <% if user.id != current_user.id %>
           <div class='each-user'>
-            <div class='user-name'><%= user.nickname %></div>
+            <div class='left-box'>
+              <div class='user-img'>
+                <%if user.image.present? %>
+                  <%= image_tag user.image, class: 'friends-img' %>
+                <%else %>
+                  <img class='friends-img' src="/assets/no_image.png">
+                <%end %>
+              </div>
+              <div class='user-name'><%= user.nickname %></div>
+            </div>
 
-            <div class="follow_form">
-              <% if current_user.following? user %>
-                <button class="unfollow-btn">
-                  <%= link_to "Following", {controller: :users,action: :unfollow,user_id: user.id}, method: :put, class:"unfollow"%>
-                </button>
-              <% else %>
-                <button class="follow-btn">
-                  <%= link_to "Follow", {controller: :users,action: :follow,user_id: user.id}, method: :put, class:"follow"%>
-                </button>
-              <% end %>
+            <div class='rigth-box'>
+              <div class="follow_form">
+                <% if current_user.following? user %>
+                  <button class="unfollow-btn">
+                    <%= link_to "Following", {controller: :users,action: :unfollow,user_id: user.id}, method: :put, class:"unfollow"%>
+                  </button>
+                <% else %>
+                  <button class="follow-btn">
+                    <%= link_to "Follow", {controller: :users,action: :follow,user_id: user.id}, method: :put, class:"follow"%>
+                  </button>
+                <% end %>
+              </div>
             </div>
           </div>
         <%end%>
