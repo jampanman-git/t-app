@@ -1,5 +1,9 @@
 .friends-wrapper{
-  margin-top: 80px;
+  margin-top: 100px;
+}
+
+.my-name{
+  margin-bottom: 10px;
 }
 
 .friends-main{
@@ -39,13 +43,14 @@
 
 .all-user{
   width: 45vh;
+  height: auto;
   border: 1px solid rgb(220, 220, 220);
 }
 
 .each-user{
   display: flex;
   justify-content: space-between;
-  margin: 0 5px 10px 5px;
+  margin: 5px 5px 10px 5px;
 }
 
 .user-name, .unfollow-btn, .follow-btn{
