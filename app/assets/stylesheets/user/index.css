@@ -14,6 +14,15 @@
   margin-bottom: 15px;
 }
 
+.follow-path, .follower-path{
+  color: #333333;
+  text-decoration: none;
+}
+
+.follow-path:hover, .follower-path:hover, .active{
+  text-decoration: underline;
+}
+
 .search-box{
   margin-bottom: 25px;
 }
@@ -27,3 +36,4 @@
   height: 30px;
   background-color: rgb(122, 150, 234);
 }
+
