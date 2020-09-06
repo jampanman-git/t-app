@@ -3,7 +3,7 @@
   <%= render "shared/navbar"%>
 
   <div class='friends-main'>
-    <h1 class='my-name'>フォロー</h1>
+    <h1 class='my-name'>フォロワー</h1>
     <div class='my-friends-data'>
       <h2><%= link_to 'フォロー数', {controller: :users,action: :follow_list,user_id: current_user.id}, class: "follow-path" %>:<%= current_user.follow_count %>　</h2>
       <h2><%= link_to 'フォロワー数', {controller: :users,action: :follower_list,user_id: current_user.id}, class: "follower-path" %>:<%= current_user.followers_count %></h2>
