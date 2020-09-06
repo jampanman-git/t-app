@@ -25,7 +25,7 @@
             <div class="follow_form">
               <% if current_user.following? user %>
                 <button class="action">
-                  <%= link_to "UnFollow", {controller: :users,action: :unfollow,user_id: user.id}, method: :put, class:"unfollow"%>
+                  <%= link_to "Following", {controller: :users,action: :unfollow,user_id: user.id}, method: :put, class:"unfollow"%>
                 </button>
               <% else %>
                 <button class="action">
