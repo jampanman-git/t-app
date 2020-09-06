@@ -1,14 +1,14 @@
-<div class='f.page-wrapper'>
+<div class='friends-wrapper'>
 
   <%= render "shared/navbar"%>
 
-  <div class='f.main'>
+  <div class='friends-main'>
     <div class='my-f.data'>
       <h3><%= link_to 'フォロー数', {controller: :users,action: :follow_list,user_id: current_user.id}, class: "follow-path" %>:<%= current_user.follow_count %></h3>
       <h3><%= link_to 'フォロワー数', {controller: :users,action: :follower_list,user_id: current_user.id}, class: "follower-path" %>:<%= current_user.followers_count %></h3>
     </div>
 
-    <div class='search-block'>
+    <div class='search-box'>
       <%= form_with(url: search_users_path, local: true, method: :get, class: "search-form") do |form| %>
         <%= form.text_field :keyword, placeholder: "ユーザー名を検索する", class: "search-input" %>
         <%= form.submit "検索", class: "search-btn" %>
