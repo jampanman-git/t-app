@@ -17,3 +17,13 @@
 .search-box{
   margin-bottom: 25px;
 }
+
+.search-input{
+  height: 30px;
+  background-color: rgb(206, 233, 244);
+}
+
+.search-btn{
+  height: 30px;
+  background-color: rgb(122, 150, 234);
+}
