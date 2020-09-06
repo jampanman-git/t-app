@@ -6,9 +6,9 @@
 
 | Column      | Type   | Options     |
 | ----------- | ------ | ----------- |
-| nickname    | string | null: false, uniqueness: true |
+| nickname    | string | null: false, length: { maximum: 6},uniqueness: true |
 | password    | string | null: false |
-| email       | string | null: false |
+| email       | string | null: false,unique: true |
 | image       | text   |             |
 
 ### Association
