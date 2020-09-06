@@ -53,5 +53,14 @@
 }
 
 .unfollow-btn, .follow-btn{
-  width: 70px;
+  width: 80px;
+}
+
+.unfollow-btn{
+  background-color: greenyellow;
+}
+
+
+.follow-btn{
+  background-color: lightskyblue;
 }
