@@ -14,7 +14,7 @@
   margin-bottom: 15px;
 }
 
-.follow-path, .follower-path{
+.follow-path, .follower-path, .unfollow, .follow{
   color: #333333;
   text-decoration: none;
 }
