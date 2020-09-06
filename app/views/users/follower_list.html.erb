@@ -17,7 +17,7 @@
     </div>
 
     <div class='all-user'>
-      <% current_user.all_following.each do |user| %>
+      <% current_user.followers.each do |user| %>
         <% if user.id != current_user.id %>
           <div class='each-user'>
             <div class='left-box'>
