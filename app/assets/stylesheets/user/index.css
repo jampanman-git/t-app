@@ -52,3 +52,6 @@
   font-size: 18px;
 }
 
+.unfollow-btn, .follow-btn{
+  width: 70px;
+}
