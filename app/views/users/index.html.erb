@@ -1,17 +1,18 @@
-<div class='f.page-wrapper'>
+<div class='friends-wrapper'>
 
   <%= render "shared/navbar"%>
 
-  <div class='f.main'>
-    <div class='my-f.data'>
-      <h3><%= link_to 'フォロー数', {controller: :users,action: :follow_list,user_id: current_user.id}, class: "follow-path" %>:<%= current_user.follow_count %></h3>
-      <h3><%= link_to 'フォロワー数', {controller: :users,action: :follower_list,user_id: current_user.id}, class: "follower-path" %>:<%= current_user.followers_count %></h3>
+  <div class='friends-main'>
+    <h1 class='my-name'><%= current_user.nickname %></h1>
+    <div class='my-friends-data'>
+      <h2><%= link_to 'フォロー数', {controller: :users,action: :follow_list,user_id: current_user.id}, class: "follow-path" %>:<%= current_user.follow_count %>　</h2>
+      <h2><%= link_to 'フォロワー数', {controller: :users,action: :follower_list,user_id: current_user.id}, class: "follower-path" %>:<%= current_user.followers_count %></h2>
     </div>
 
-    <div class='search-block'>
+    <div class='search-box'>
       <%= form_with(url: search_users_path, local: true, method: :get, class: "search-form") do |form| %>
         <%= form.text_field :keyword, placeholder: "ユーザー名を検索する", class: "search-input" %>
-        <%= form.submit "検索", class: "search-btn" %>
+        <%= form.submit "Search", class: "search-btn" %>
       <% end %>
     </div>
 
@@ -23,13 +24,13 @@
 
             <div class="follow_form">
               <% if current_user.following? user %>
-                <div class="action">
-                  <%= link_to "UnFollow", {controller: :users,action: :unfollow,user_id: user.id}, method: :put %>
-                </div>
+                <button class="unfollow-btn">
+                  <%= link_to "Following", {controller: :users,action: :unfollow,user_id: user.id}, method: :put, class:"unfollow"%>
+                </button>
               <% else %>
-                <div class="action">
-                  <%= link_to "Follow", {controller: :users,action: :follow,user_id: user.id}, method: :put %>
-                </div>
+                <button class="follow-btn">
+                  <%= link_to "Follow", {controller: :users,action: :follow,user_id: user.id}, method: :put, class:"follow"%>
+                </button>
               <% end %>
             </div>
           </div>
