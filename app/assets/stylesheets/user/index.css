@@ -48,7 +48,7 @@
   margin: 0 5px 10px 5px;
 }
 
-.user-name, .action{
+.user-name, .unfollow-btn, .follow-btn{
   font-size: 18px;
 }
 
