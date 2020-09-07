@@ -41,7 +41,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("abs.jpg");
+  background-image: url("/images/abs.jpg");
   background-color:rgba(255, 255, 255, 0.8);
   background-blend-mode:lighten;
   background-position: center center;
@@ -54,7 +54,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("leg.jpg");
+  background-image: url("/images/leg.jpg");
   background-color:rgba(255, 255, 255, 0.8);
   background-blend-mode:lighten;
   background-position: center center;
