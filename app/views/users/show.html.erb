@@ -6,7 +6,11 @@
       My Profile
     </h2>
     <div class='user-img-content'>
-      <%= image_tag current_user.image ,class:"user-box-img" %>
+      <%if current_user.image.present? %>
+        <%= image_tag current_user.image ,class:"user-box-img" %>
+      <%else %>
+        <img class='friends-img'>
+      <%end %>
     </div>
 
     <%=link_to(edit_user_registration_path) do %>
