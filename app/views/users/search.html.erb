@@ -25,7 +25,7 @@
                 <%if user.image.present? %>
                   <%= image_tag user.image, class: 'friends-img' %>
                 <%else %>
-                  <img class='friends-img' src="no_image.png">
+                  <img class='friends-img'>
                 <%end %>
               </div>
               <div class='user-name'><%= user.nickname %></div>
