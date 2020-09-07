@@ -2,16 +2,19 @@
   <div class="box-inner">
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <h1 class='login-title'>LOG IN</h1>
+
       <div class="box-email">
         <%= f.label :email, "Email" %><br />
         <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
       </div>
+
       <div class="box-password">
         <div class="column-left">
           <%= f.label :password, "Password" %>
         </div>
         <%= f.password_field :password, autocomplete: "current-password" %>
       </div>
+
       <div class="box-login">
         <%= f.submit "Log in" %>
         <div class="legal-text">
@@ -21,7 +24,6 @@
           <%= link_to "プライバシー規約", "#" %>
           に同意するものとみなされます。
         </div>
-
       </div>
     <% end %>
 
