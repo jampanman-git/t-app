@@ -18,6 +18,10 @@
   margin-bottom: 15px;
 }
 
+.friends-img{
+  background-color: rgb(220, 220, 220);
+}
+
 .follow-path, .follower-path, .unfollow, .follow{
   color: #333333;
   text-decoration: none;
