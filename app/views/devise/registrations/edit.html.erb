@@ -3,7 +3,7 @@
   <div class='edit-inner'>
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
       <h2 class='edit-title'> Edit my information </h2>
-      <%# <%= render "devise/shared/error_messages", resource: resource %>
+      <%= render "devise/shared/error_messages", resource: resource %>
 
       <div class="box-image">
         <%= f.label :image %><br />
@@ -12,7 +12,7 @@
 
       <div class="box-nickname">
         <%= f.label :nickname %><br />
-        <%= f.text_field :nickname, class:"text-field" ,autofocus: true %>
+        <%= f.text_field :nickname, class:"text-field", autofocus: true, maxlength:"6" %>
       </div>
 
       <div class="box-email">
