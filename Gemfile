@@ -70,3 +70,6 @@ gem 'image_processing', '~> 1.2'
 #日本語化
 gem 'rails-i18n', '~> 6.0'
 gem 'devise-i18n'
+
+#画像の保存先をAWS S3に変更
+gem "aws-sdk-s3", require: false
