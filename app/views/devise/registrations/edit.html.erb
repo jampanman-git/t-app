@@ -41,9 +41,11 @@
         <%= f.submit "Update" %>
       </div>
     <% end %>
-  </div>
-  <div class='edit-back'>
-    <%= link_to "Back", user_path(current_user), class: "my-page"%>
-  </div>
 
+    <div class='edit-back'>
+      <%= link_to "Back", user_path(current_user), class: "my-page"%>
+    </div>
+  </div>
 </div>
+
+<%= render "shared/footer"%>
