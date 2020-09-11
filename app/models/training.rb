@@ -14,4 +14,11 @@ class Training < ApplicationRecord
     validates :abs
     validates :leg
   end
+
+  with_options numericality: { greater_than_or_equal_to: 0} do
+    validates :arm
+    validates :spine
+    validates :abs
+    validates :leg
+  end
 end
