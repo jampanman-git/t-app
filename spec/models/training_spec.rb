@@ -56,28 +56,28 @@ describe Training do
         expect(@training.errors.full_messages).to include("Leg can't be blank")
       end
 
-      # it "Armに半角数字以外の文字が含まれていたら登録できない" do
-      #   @training.arm = 'あああ'
-      #   @training.valid?
-      #   expect(@training.errors.full_messages).to include("Arm is invalid")
-      # end
+      it "Armに半角数字以外の文字が含まれていたら登録できない" do
+        @training.arm = 'あああ'
+        @training.valid?
+        expect(@training.errors.full_messages).to include("Arm is not a number")
+      end
 
-      # it "Spineに半角数字以外の文字が含まれていたら登録できない" do
-      #   @training.spine = 'あああ'
-      #   @training.valid?
-      #   expect(@training.errors.full_messages).to include("Spine is invalid")
-      # end
+      it "Spineに半角数字以外の文字が含まれていたら登録できない" do
+        @training.spine = 'あああ'
+        @training.valid?
+        expect(@training.errors.full_messages).to include("Spine is not a number")
+      end
 
-      # it "Absに半角数字以外の文字が含まれていたら登録できない" do
-      #   @training.abs = 'あああ'
-      #   @training.valid?
-      #   expect(@training.errors.full_messages).to include("Abs is invalid")
-      # end
+      it "Absに半角数字以外の文字が含まれていたら登録できない" do
+        @training.abs = 'あああ'
+        @training.valid?
+        expect(@training.errors.full_messages).to include("Abs is not a number")
+      end
 
-      # it "legに半角数字以外の文字が含まれていたら登録できない" do
-      #   @training.leg = 'あああ'
-      #   @training.valid?
-      #   expect(@training.errors.full_messages).to include("Leg is invalid")
+      it "legに半角数字以外の文字が含まれていたら登録できない" do
+        @training.leg = 'あああ'
+        @training.valid?
+        expect(@training.errors.full_messages).to include("Leg is not a number")
       end
     end
   end
