@@ -14,7 +14,7 @@ Ruby(2.6.5), Ruby on Rails(6.0.3.2), HTML, CSS, MySQL, Linux, AWS(S3)
 
 
 # 本番環境のアプリURL
-https://app.lucidchart.com/invitations/accept/6c8618d7-b3c4-4a1f-900e-2f6272aad1f2
+https://hajime-mascle-app.herokuapp.com/
 
 
 # テスト用アカウント
